@@ -1,0 +1,221 @@
+<html>
+	<head>
+		<title>Caltech Bioinformatics Resource Center</title>
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+			body {
+				color: #666666;
+				background-color: #f9f8f6;
+				background-image: url("./background_oak.jpg");
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;}
+			.wrapper {
+				width: 960px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #000000;
+				background-color: #ffffff;}
+			header {
+				height: 160px;
+				background-image: url("./BRO_logo2.png");}
+			h1 {
+				text-indent: -9999px;
+				width: 960px;
+				height: 130px;
+				margin: 0px;}
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 30px;}
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.courses {
+				float: left;
+				width: 640px;
+				border-right: 1px solid #eeeeee;}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 220px;
+				height: 125px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				text-decoration: none;}
+			h1, h2, h3, h5 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+		</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ function nameDefined(ckie,nme)
+{
+   var splitValues
+   var i
+   for (i=0;i<ckie.length;++i)
+   {
+      splitValues=ckie[i].split("=")
+      if (splitValues[0]==nme) return true
+   }
+   return false
+}
+
+function delBlanks(strng)
+{
+   var result=""
+   var i
+   var chrn
+   for (i=0;i<strng.length;++i) {
+      chrn=strng.charAt(i)
+      if (chrn!=" ") result += chrn
+   }
+   return result
+}
+function getCookieValue(ckie,nme)
+{
+   var splitValues
+   var i
+   for(i=0;i<ckie.length;++i) {
+      splitValues=ckie[i].split("=")
+      if(splitValues[0]==nme) return splitValues[1]
+   }
+   return ""
+}
+function insertCounter() {
+ readCookie()
+ displayCounter()
+}
+ function displayCounter() {
+ document.write('<H3 ALIGN="CENTER">')
+ var txt_count = "You have visited this website for " + counter + " times.";
+ document.write(txt_count.fontcolor("white"))
+ document.writeln('</H3>')
+ }
+function readCookie() {
+ var cookie=document.cookie
+ counter=0
+ var chkdCookie=delBlanks(cookie)  //are on the client computer
+ var nvpair=chkdCookie.split(";")
+ if(nameDefined(nvpair,"pageCount"))
+ counter=parseInt(getCookieValue(nvpair,"pageCount"))
+ ++counter
+ var futdate = new Date()
+ var expdate = futdate.getTime()
+ expdate += 3600000 * 24 *30  //expires in 1 hour
+ futdate.setTime(expdate)
+
+ var newCookie="pageCount="+counter
+ newCookie += "; expires=" + futdate.toGMTString()
+ window.document.cookie=newCookie
+}
+// -->
+</SCRIPT>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Bioinformatics Server</h1>
+				<nav>
+					<ul>
+						<li><a href="" class="current">Home</a></li>
+						<li><a href="https://cbrc.github.io/">About</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img src="./slide4.jpg" alt="Bioinformatics data processing" />
+						<figcaption> NGS Bioinformatics services</figcaption>
+					</figure>
+					<hgroup>
+						<h5> NGS bioinformatics is an interdisciplinary field that integrates computer science, mathematics, statistics, software engineering to tackle complex biological questions. CBRC provides pipeline development, data analysis and hands-on workshops to both Caltech and non-Caltech customers.
+</h5>
+					</hgroup>
+					<p></p>
+				</article>    
+				<article>
+					<figure>
+						<img src="./slide1.jpg" alt="Bioinformatics training" />
+						<figcaption>Statistical consulting & training</figcaption>
+					</figure>
+					<hgroup>
+						<h5> Statistical analysis is essential for designing biological experiments. Weak statistical standards contribute to irreproducbility of biological results. CBRC provides experimental design & power analysis, statistical analysis and lectures to both Caltech and non-Caltech customers. 
+</h5>
+					</hgroup>
+					<p></p>
+				</article>    
+			</section>
+			<aside>
+				<section class="events">
+					<h5></h5>
+					<h3>Past events</h3><font size="2">
+					</font>
+					<h3>Future Events</h3>
+					<a href="https://github.com/caltech-bioinformatics-resource-center/bioinformatics-symposium-2019">Bioinformatics Symposium (02/14/2019)</a>
+				</section>
+				<section class="contact-details">
+                                        <br></br>
+					<h3>Contact</h3>
+					<p>
+						Bioinformatics Resource Center<br />
+						Kerckhoff B131
+						Caltech Institute of Technology<br />
+						1200 E California Blvd, Pasadena, CA 91225</p>
+				</section>
+			</aside>
+			<footer>
+				&copy; 2019 CBRC
+			</footer>
+		</div><!-- .wrapper -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+insertCounter()
+// -->
+</SCRIPT>
+
+	</body>
+</html>
